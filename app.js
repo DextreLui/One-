@@ -11,8 +11,8 @@ function agregarAmigo (){
     if (nombreAmigo.trim() === "") {
             alert("Por favor, inserte un nombre.");
         } 
-    else if (nombreAmigo.includes(amigo)) {
-        alert(`${amigo} ya fue agregado anteriomente, por favor agrega otro nombre`)
+    else if (amigos.includes(nombreAmigo)) {
+        alert(`${nombreAmigo} ya fue registrado, por favor agrega otro nombre`)
       
     else {
             amigos.push(nombreAmigo); // Agregaras el nombre al array amigos
